@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Dashboard from "./pages/Dashboard";
 import Homepage from "./pages/Home";
 import GlobalStyle from "./style/GlobalStyle";
 
@@ -8,7 +9,11 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      {homepage ? <Homepage setHomepage={setHomepage} /> : <></>}
+      {homepage ? (
+        <Homepage setHomepage={setHomepage} />
+      ) : (
+        <Dashboard setHomepage={setHomepage} />
+      )}
     </>
   );
 }
