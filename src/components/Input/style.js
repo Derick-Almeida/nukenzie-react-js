@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 
 const SelectAnimation = keyframes`
     0%{
-        transform: translateY(-40px);
+        transform: translateY(-30px);
         opacity: 0;
     }
     100%{
@@ -99,7 +99,7 @@ export const Container = styled.div`
 
     box-shadow: 1px 1px 5px var(--shadow);
     border-radius: 8px;
-    margin-top: 5px;
+    margin-top: 4px;
 
     animation: ${SelectAnimation} 0.3s linear;
     transition: 0.3s;
@@ -107,17 +107,21 @@ export const Container = styled.div`
     > li:nth-child(1) {
       background: var(--grey-1);
       color: var(--grey-4);
+
       border-radius: 8px 8px 0 0;
+      border: 2px solid var(--grey-1);
     }
     > li:nth-child(2) {
       background: var(--grey-0);
       color: var(--grey-3);
+
       border-radius: 0 0 8px 8px;
+      border: 2px solid var(--grey-0);
     }
 
     > li {
       width: 100%;
-      padding: 10px;
+      padding: 8px 19px;
 
       cursor: pointer;
       user-select: none;
@@ -125,6 +129,7 @@ export const Container = styled.div`
       &:hover {
         background: var(--grey-2);
         color: var(--grey-0);
+        border: 2px solid var(--grey-2);
       }
     }
   }

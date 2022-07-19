@@ -12,7 +12,7 @@ export const HeaderTheme = styled.header`
     justify-content: space-between;
     align-items: center;
 
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 
     button {

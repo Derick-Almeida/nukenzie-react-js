@@ -1,25 +1,38 @@
-import Form from "./Form";
-import Header from "./Header";
-import List from "./List";
+import { useContext } from "react";
+
 import { Container } from "./style";
 
+import Header from "./Header";
+import Filter from "./Filter";
+import List from "./List";
+import Form from "./Form";
+
+import { ContextExpenses } from "../../contexts/ContextExpenses";
+
 function Dashboard({ setHomepage }) {
+  const { financialExpenses } = useContext(ContextExpenses);
+
   return (
     <>
       <Header setHomepage={setHomepage} />
       <Container>
-        <div>
+        <div className="form">
           <Form />
 
-          <div className="total--money">
-            <h2>
-              Valor total: <span>$ {12345}</span>
-            </h2>
-            <span>O valor se refere ao saldo</span>
-          </div>
+          {financialExpenses.length > 0 && (
+            <div className="total--money">
+              <h2>
+                Valor total: <span>$ {12345}</span>
+              </h2>
+              <span>O valor se refere ao saldo</span>
+            </div>
+          )}
         </div>
 
-        <List />
+        <div className="list">
+          <Filter />
+          <List />
+        </div>
       </Container>
     </>
   );

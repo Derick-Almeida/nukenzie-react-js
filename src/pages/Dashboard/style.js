@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
 export const Container = styled.main`
-  max-width: 80%;
+  max-width: 70%;
   min-height: 80vh;
   margin: 0 auto;
 
   display: flex;
-  gap: 60px;
+  gap: 5%;
 
   padding-top: 58px;
 
-  > div {
+  .form {
     width: 35%;
     max-width: 35%;
 
@@ -39,5 +39,14 @@ export const Container = styled.main`
         font-weight: 400;
       }
     }
+  }
+
+  .list {
+    width: 60%;
+    max-width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
   }
 `;
