@@ -7,7 +7,7 @@ export const ButtonTheme = styled.button`
   border: none;
   border-radius: 8px;
 
-  width: 80%;
+  width: 100%;
   padding: 10px 0;
 
   font-family: "Inter", sans-serif;

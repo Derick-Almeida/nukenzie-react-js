@@ -14,21 +14,18 @@ export const Container = styled.div`
 export const Content = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   gap: 50px;
 
-  width: 80%;
-  height: 80vh;
+  max-width: 80%;
+  max-height: 75vh;
 
   color: var(--white);
 
   .container--intro {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
+    max-width: 25%;
 
     > div {
-      width: 51%;
       display: flex;
       flex-direction: column;
       gap: 28px;
@@ -42,16 +39,79 @@ export const Content = styled.div`
         font-weight: 400;
         font-size: 0.9rem;
       }
+
+      > button {
+        width: 80%;
+      }
     }
   }
 
   .container--logo {
-    flex: 1;
+    height: 100%;
 
     > img {
       width: 100%;
       height: 100%;
       object-fit: contain;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .container--intro {
+      max-width: 35%;
+    }
+  }
+  @media (max-width: 768px) {
+    .container--intro {
+      max-width: 40%;
+
+      > div {
+        > p {
+          font-size: 1.8rem;
+        }
+
+        > span {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+  @media (max-width: 650px) {
+    .container--intro {
+      max-width: 70%;
+
+      > div {
+        > p {
+          font-size: 2rem;
+        }
+
+        > span {
+          font-size: 0.9rem;
+        }
+      }
+    }
+    .container--logo {
+      display: none;
+    }
+  }
+  @media (max-width: 425px) {
+    .container--intro {
+      max-width: 80%;
+    }
+  }
+  @media (max-width: 375px) {
+    .container--intro {
+      max-width: 90%;
+    }
+  }
+  @media (max-width: 320px) {
+    .container--intro {
+      div {
+        text-align: center;
+        > button {
+          width: 100%;
+        }
+      }
     }
   }
 `;
