@@ -26,7 +26,7 @@ function Dashboard({ setHomepage }) {
           {financialExpenses.length > 0 && (
             <div className="total--money">
               <h2>
-                Valor total: <span>$ {totalValue}</span>
+                Valor total: <span>$ {totalValue.toPrecision(4)}</span>
               </h2>
               <span>O valor se refere ao saldo</span>
             </div>

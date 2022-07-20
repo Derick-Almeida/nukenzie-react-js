@@ -18,4 +18,22 @@ export const Container = styled.div`
       user-select: none;
     }
   }
+
+  @media (min-width: 2560px) {
+  }
+
+  @media (max-width: 1024px) {
+  }
+
+  @media (max-width: 768px) {
+  }
+
+  @media (max-width: 425px) {
+  }
+
+  @media (max-width: 375px) {
+  }
+
+  @media (max-width: 320px) {
+  }
 `;

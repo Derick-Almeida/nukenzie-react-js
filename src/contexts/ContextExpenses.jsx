@@ -1,10 +1,15 @@
 import { createContext, useState } from "react";
+import { toast } from "react-toastify";
 import { v4 as uuidv4 } from "uuid";
 
 export const ContextExpenses = createContext({});
 
 export const ProviderExpenses = ({ children }) => {
-  const [financialExpenses, setFinancialExpenses] = useState([]);
+  const initialValue = JSON.parse(localStorage.getItem("@NuKenzie:expenses"));
+
+  const [financialExpenses, setFinancialExpenses] = useState(
+    initialValue || []
+  );
   const [expensesFiltred, setExpensesFiltred] = useState(financialExpenses);
 
   const [valueType, setValueType] = useState("Entrada");
@@ -14,6 +19,11 @@ export const ProviderExpenses = ({ children }) => {
   const removeExpense = (id) => {
     setFinancialExpenses(
       financialExpenses.filter((expense) => expense.id !== id)
+    );
+
+    localStorage.setItem(
+      "@NuKenzie:expenses",
+      JSON.stringify(financialExpenses.filter((expense) => expense.id !== id))
     );
   };
 
@@ -30,6 +40,25 @@ export const ProviderExpenses = ({ children }) => {
           type: valueType,
         },
       ]);
+
+      localStorage.setItem(
+        "@NuKenzie:expenses",
+        JSON.stringify([
+          ...financialExpenses,
+          {
+            id: uuidv4(),
+            description,
+            value: valueType === "Entrada" ? value : -value,
+            type: valueType,
+          },
+        ])
+      );
+
+      setDescription("");
+      setValueType("Entrada");
+      setValue("");
+    } else {
+      toast.error("Preencha o formulário!");
     }
   };
 

@@ -13,13 +13,18 @@ function Card({ expense }) {
 
   const { removeExpense } = useContext(ContextExpenses);
 
+  const fromateValue = Number(Number(value).toPrecision(4)).toFixed(2);
+
   return (
     <ListItem type={type}>
       <div>
         <p>{description}</p>
 
         <div>
-          <span>R$ {Number(value).toFixed(2)}</span>
+          <span>
+            R$
+            {fromateValue}
+          </span>
           <Button onClick={() => removeExpense(id)}>
             <FaTrash />
           </Button>
