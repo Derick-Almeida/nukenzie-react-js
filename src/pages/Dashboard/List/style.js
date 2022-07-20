@@ -5,8 +5,6 @@ export const Container = styled.div`
     font-weight: 700;
     color: var(--grey-3);
     font-size: 1.4rem;
-
-    margin-bottom: 27px;
   }
 
   ul {

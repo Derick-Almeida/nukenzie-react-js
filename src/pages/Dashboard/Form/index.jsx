@@ -1,3 +1,5 @@
+import { useContext } from "react";
+
 import { Container } from "./style";
 
 import Button from "../../../components/Button";
@@ -5,10 +7,14 @@ import Input from "../../../components/Input";
 
 import { MdKeyboardArrowDown } from "react-icons/md";
 
+import { ContextExpenses } from "../../../contexts/ContextExpenses";
+
 function Form() {
+  const { addExpense } = useContext(ContextExpenses);
+
   return (
     <Container>
-      <form>
+      <form onSubmit={addExpense}>
         <div className="description--box">
           <Input
             type="text"
@@ -27,7 +33,9 @@ function Form() {
           />
         </div>
 
-        <Button color="primary">Inserir valor</Button>
+        <Button type="submit" color="primary">
+          Inserir valor
+        </Button>
       </form>
     </Container>
   );

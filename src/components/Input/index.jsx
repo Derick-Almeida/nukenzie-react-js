@@ -1,9 +1,20 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+
 import { Container } from "./style";
+
+import { ContextExpenses } from "../../contexts/ContextExpenses";
 
 function Input({ label, placeholder, type, text, icon: Icon, ...rest }) {
   const [hidden, setHidden] = useState(true);
-  const [valueType, setValueType] = useState("Entrada");
+
+  const {
+    valueType,
+    description,
+    value,
+    setValueType,
+    setDescription,
+    setValue,
+  } = useContext(ContextExpenses);
 
   const selectType = (e) => {
     setValueType(e.target.type);
@@ -15,14 +26,26 @@ function Input({ label, placeholder, type, text, icon: Icon, ...rest }) {
       {type === "text" && (
         <>
           <p>{label}</p>
-          <input {...rest} type="text" placeholder={placeholder} />
+          <input
+            {...rest}
+            type="text"
+            placeholder={placeholder}
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+          />
         </>
       )}
       {type === "number" && (
         <>
           <p>{label}</p>
           <div>
-            <input {...rest} type="number" placeholder={placeholder} />
+            <input
+              {...rest}
+              type="number"
+              placeholder={placeholder}
+              value={value}
+              onChange={(e) => setValue(e.target.value)}
+            />
             <span>{text}</span>
           </div>
         </>

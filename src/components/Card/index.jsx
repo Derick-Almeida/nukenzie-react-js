@@ -1,11 +1,17 @@
+import { useContext } from "react";
+
 import { ListItem } from "./style";
 
 import Button from "../Button";
 
 import { FaTrash } from "react-icons/fa";
 
-function Card({ expenses }) {
-  const { description, type, value } = expenses;
+import { ContextExpenses } from "../../contexts/ContextExpenses";
+
+function Card({ expense }) {
+  const { id, description, type, value } = expense;
+
+  const { removeExpense } = useContext(ContextExpenses);
 
   return (
     <ListItem type={type}>
@@ -14,7 +20,7 @@ function Card({ expenses }) {
 
         <div>
           <span>R$ {Number(value).toFixed(2)}</span>
-          <Button>
+          <Button onClick={() => removeExpense(id)}>
             <FaTrash />
           </Button>
         </div>

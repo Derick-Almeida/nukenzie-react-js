@@ -12,6 +12,10 @@ import { ContextExpenses } from "../../contexts/ContextExpenses";
 function Dashboard({ setHomepage }) {
   const { financialExpenses } = useContext(ContextExpenses);
 
+  const totalValue = financialExpenses.reduce((acc, expense) => {
+    return acc + Number(expense.value);
+  }, 0);
+
   return (
     <>
       <Header setHomepage={setHomepage} />
@@ -22,7 +26,7 @@ function Dashboard({ setHomepage }) {
           {financialExpenses.length > 0 && (
             <div className="total--money">
               <h2>
-                Valor total: <span>$ {12345}</span>
+                Valor total: <span>$ {totalValue}</span>
               </h2>
               <span>O valor se refere ao saldo</span>
             </div>

@@ -3,23 +3,26 @@ import { useContext } from "react";
 import { Container } from "./style";
 
 import NoCards from "../../../assets/no_card.svg";
+
 import Card from "../../../components/Card";
 
 import { ContextExpenses } from "../../../contexts/ContextExpenses";
 
 function List() {
-  const { financialExpenses } = useContext(ContextExpenses);
+  const { expensesFiltred } = useContext(ContextExpenses);
   return (
     <>
       <Container>
-        <h2>Você ainda não possui nenhum lançamento</h2>
         <ul>
-          {financialExpenses.length > 0 ? (
-            financialExpenses.map((expenses, index) => (
-              <Card key={index} expenses={expenses}></Card>
+          {expensesFiltred.length > 0 ? (
+            expensesFiltred.map((expense, index) => (
+              <Card key={index} expense={expense}></Card>
             ))
           ) : (
-            <img src={NoCards} alt="Sem cards no momento" />
+            <>
+              <h2>Você ainda não possui nenhum lançamento</h2>
+              <img src={NoCards} alt="Sem cards no momento" />
+            </>
           )}
         </ul>
       </Container>

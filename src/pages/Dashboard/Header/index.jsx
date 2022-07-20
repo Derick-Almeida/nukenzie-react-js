@@ -1,6 +1,7 @@
+import { HeaderTheme } from "./style";
+
 import Button from "../../../components/Button";
 import Logo from "../../../components/Logo";
-import { HeaderTheme } from "./style";
 
 function Header({ setHomepage }) {
   return (

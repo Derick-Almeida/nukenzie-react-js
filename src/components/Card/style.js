@@ -32,6 +32,7 @@ export const ListItem = styled.li`
 
     > div {
       display: flex;
+      justify-content: space-between;
       gap: 50px;
       width: 35%;
       max-width: 35%;
