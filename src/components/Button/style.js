@@ -13,6 +13,7 @@ export const ButtonTheme = styled.button`
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 1rem;
+  text-align: center;
 
   transition: background 0.4s;
 
