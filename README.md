@@ -21,9 +21,9 @@
 ## Layout web:
 
 <br>
-<div display='flex'>
-<img src='./src/assets/nukenzie_homepage.png' alt='web 1'/>
-<img src='./src/assets/nukenzie_dashboard.png' alt='web 2'/>
+<div style='display:flex; gap: 4%'>
+<img src='./src/assets/nukenzie_homepage.png' width='48%' alt='web 1'/>
+<img src='./src/assets/nukenzie_dashboard.png' width='48%' alt='web 2'/>
 </div>
 
 <br>
