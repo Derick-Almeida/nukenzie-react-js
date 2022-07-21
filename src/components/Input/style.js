@@ -133,4 +133,38 @@ export const Container = styled.div`
       }
     }
   }
+
+  @media (max-width: 1024px) {
+    > p {
+      font-size: 0.8rem;
+      margin-bottom: 12px;
+    }
+
+    input {
+      padding: 12px 15px;
+
+      font-size: 0.9rem;
+    }
+
+    > div {
+      > input[type="number"] {
+        padding-right: 38px;
+      }
+
+      > span {
+        right: 15px;
+        font-size: 1rem;
+      }
+
+      > svg {
+        right: 15px;
+        font-size: 1.3rem;
+      }
+    }
+
+    > ul li {
+      padding: 4px 15px;
+      margin-bottom: -1px;
+    }
+  }
 `;

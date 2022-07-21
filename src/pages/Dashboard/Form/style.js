@@ -36,4 +36,18 @@ export const Container = styled.div`
       padding: 14px 0;
     }
   }
+
+  @media (max-width: 1024px) {
+    padding: 34px 20px;
+
+    > form {
+      .description--box span {
+        font-size: 0.8rem;
+      }
+
+      button {
+        padding: 10px 0;
+      }
+    }
+  }
 `;

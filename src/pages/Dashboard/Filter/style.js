@@ -24,4 +24,34 @@ export const Container = styled.div`
       font-weight: 600;
     }
   }
+
+  @media (max-width: 1024px) {
+    > p {
+      font-size: 0.9rem;
+    }
+
+    .buttons {
+      gap: 6px;
+
+      button {
+        padding: 6px 11px;
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .buttons button {
+      padding: 5px 9px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    flex-direction: column;
+
+    > p {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+  }
 `;

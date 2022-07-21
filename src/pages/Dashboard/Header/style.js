@@ -21,4 +21,36 @@ export const HeaderTheme = styled.header`
       font-weight: 600;
     }
   }
+
+  @media (max-width: 1024px) {
+    > div {
+      width: 80%;
+
+      button {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    > div {
+      width: 85%;
+
+      button {
+        width: 8%;
+      }
+    }
+  }
+
+  @media (max-width: 425px) {
+    > div button {
+      width: 14%;
+    }
+  }
+
+  @media (max-width: 375px) {
+    > div button {
+      width: 16%;
+    }
+  }
 `;

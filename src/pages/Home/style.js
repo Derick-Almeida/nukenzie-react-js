@@ -62,6 +62,7 @@ export const Content = styled.div`
       max-width: 35%;
     }
   }
+
   @media (max-width: 768px) {
     .container--intro {
       max-width: 40%;
@@ -77,6 +78,7 @@ export const Content = styled.div`
       }
     }
   }
+
   @media (max-width: 650px) {
     .container--intro {
       max-width: 70%;
@@ -95,16 +97,19 @@ export const Content = styled.div`
       display: none;
     }
   }
+
   @media (max-width: 425px) {
     .container--intro {
       max-width: 80%;
     }
   }
+
   @media (max-width: 375px) {
     .container--intro {
       max-width: 90%;
     }
   }
+
   @media (max-width: 320px) {
     .container--intro {
       div {

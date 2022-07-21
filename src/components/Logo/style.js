@@ -10,4 +10,8 @@ export const TitleTheme = styled.h1`
   > span {
     color: ${(prop) => (prop.color === "primary" ? "#212529" : "#FFFFFF")};
   }
+
+  @media (max-width: 1024px) {
+    font-size: 1.3rem;
+  }
 `;

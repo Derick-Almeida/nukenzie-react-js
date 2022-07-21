@@ -18,4 +18,16 @@ export const Container = styled.div`
       user-select: none;
     }
   }
+
+  @media (max-width: 1024px) {
+    ul {
+      gap: 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 1rem;
+    }
+  }
 `;
