@@ -51,19 +51,6 @@ export const Container = styled.main`
     gap: 27px;
   }
 
-  @media (min-width: 2560px) {
-    .form {
-      .total--money {
-        > h2 {
-          > span {
-          }
-        }
-        > span {
-        }
-      }
-    }
-  }
-
   @media (max-width: 1024px) {
     max-width: 80%;
 
@@ -89,54 +76,46 @@ export const Container = styled.main`
   }
 
   @media (max-width: 768px) {
-    .form {
-      .total--money {
-        > h2 {
-          > span {
-          }
-        }
+    max-width: 90%;
+
+    .form .total--money {
+      > h2 {
+        font-size: 1.1rem;
         > span {
+          font-size: 1rem;
         }
       }
     }
   }
 
   @media (max-width: 425px) {
+    overflow: hidden;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
     .form {
-      .total--money {
-        > h2 {
-          > span {
-          }
-        }
-        > span {
-        }
-      }
+      min-width: 100%;
+    }
+
+    .list {
+      min-width: 100%;
     }
   }
+`;
 
-  @media (max-width: 375px) {
-    .form {
-      .total--money {
-        > h2 {
-          > span {
-          }
-        }
-        > span {
-        }
-      }
-    }
+export const Navegation = styled.div`
+  display: none;
+  min-height: 8vh;
+  margin-top: 2vh;
+
+  > button {
+    border-radius: 0;
   }
 
-  @media (max-width: 320px) {
-    .form {
-      .total--money {
-        > h2 {
-          > span {
-          }
-        }
-        > span {
-        }
-      }
-    }
+  @media (max-width: 425px) {
+    display: flex;
   }
 `;

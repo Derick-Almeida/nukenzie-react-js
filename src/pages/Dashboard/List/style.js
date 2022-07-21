@@ -19,21 +19,15 @@ export const Container = styled.div`
     }
   }
 
-  @media (min-width: 2560px) {
-  }
-
   @media (max-width: 1024px) {
+    ul {
+      gap: 20px;
+    }
   }
 
   @media (max-width: 768px) {
-  }
-
-  @media (max-width: 425px) {
-  }
-
-  @media (max-width: 375px) {
-  }
-
-  @media (max-width: 320px) {
+    h2 {
+      font-size: 1rem;
+    }
   }
 `;

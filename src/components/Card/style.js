@@ -69,9 +69,6 @@ export const ListItem = styled.li`
     font-size: 0.9rem;
   }
 
-  @media (min-width: 2560px) {
-  }
-
   @media (max-width: 1024px) {
     > div {
       margin-bottom: 4px;
@@ -101,17 +98,5 @@ export const ListItem = styled.li`
     > span {
       font-size: 0.7rem;
     }
-  }
-
-  @media (max-width: 768px) {
-  }
-
-  @media (max-width: 425px) {
-  }
-
-  @media (max-width: 375px) {
-  }
-
-  @media (max-width: 320px) {
   }
 `;

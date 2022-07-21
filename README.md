@@ -1,6 +1,6 @@
 <h1 align="center">Nu Kenzie</h1>
 
-<br>
+<br/>
 
 ## Sobre o Projeto.
 
@@ -14,16 +14,30 @@
 ![react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![react](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
 
-<p> Link para a aplicação: <a href='https://www.google.com/'>Nu Kenzie</a>.</p>
+- Link para a aplicação: <a href='https://nukenzie-mu.vercel.app'>Nu Kenzie</a>.
 
-<br>
+<br/>
+
+## Layout mobile:
+
+<br/>
+<div style='display:flex; gap: 2%'>
+<img src='./src/assets/mobile_homepage.png' width='32%' alt='mobile 1'/>
+<img src='./src/assets/mobile_dashboard_part_1.png' width='32%' alt='mobile 2'/>
+<img src='./src/assets/mobile_dashboard_part_2.png' width='32%' alt='mobile 3'/>
+</div>
+
+<br/>
 
 ## Layout web:
 
-<br>
-<div style='display:flex; gap: 4%'>
-<img src='./src/assets/nukenzie_homepage.png' width='48%' alt='web 1'/>
-<img src='./src/assets/nukenzie_dashboard.png' width='48%' alt='web 2'/>
+<br/>
+
+<div>
+<img src='./src/assets/nukenzie_homepage.png' alt='web 1'/>
+
+<br/>
+<img src='./src/assets/nukenzie_dashboard.png' alt='web 2'/>
 </div>
 
-<br>
+<br/>

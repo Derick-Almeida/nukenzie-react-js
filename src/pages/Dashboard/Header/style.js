@@ -22,9 +22,6 @@ export const HeaderTheme = styled.header`
     }
   }
 
-  @media (min-width: 2560px) {
-  }
-
   @media (max-width: 1024px) {
     > div {
       width: 80%;
@@ -36,14 +33,24 @@ export const HeaderTheme = styled.header`
   }
 
   @media (max-width: 768px) {
+    > div {
+      width: 85%;
+
+      button {
+        width: 8%;
+      }
+    }
   }
 
   @media (max-width: 425px) {
+    > div button {
+      width: 14%;
+    }
   }
 
   @media (max-width: 375px) {
-  }
-
-  @media (max-width: 320px) {
+    > div button {
+      width: 16%;
+    }
   }
 `;

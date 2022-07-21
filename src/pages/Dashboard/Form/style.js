@@ -37,23 +37,6 @@ export const Container = styled.div`
     }
   }
 
-  @media (min-width: 2560px) {
-    > form {
-      .description--box {
-        > span {
-        }
-      }
-
-      .details {
-        > div {
-        }
-      }
-
-      button {
-      }
-    }
-  }
-
   @media (max-width: 1024px) {
     padding: 34px 20px;
 
@@ -64,74 +47,6 @@ export const Container = styled.div`
 
       button {
         padding: 10px 0;
-      }
-    }
-  }
-
-  @media (max-width: 768px) {
-    > form {
-      .description--box {
-        > span {
-        }
-      }
-
-      .details {
-        > div {
-        }
-      }
-
-      button {
-      }
-    }
-  }
-
-  @media (max-width: 425px) {
-    > form {
-      .description--box {
-        > span {
-        }
-      }
-
-      .details {
-        > div {
-        }
-      }
-
-      button {
-      }
-    }
-  }
-
-  @media (max-width: 375px) {
-    > form {
-      .description--box {
-        > span {
-        }
-      }
-
-      .details {
-        > div {
-        }
-      }
-
-      button {
-      }
-    }
-  }
-
-  @media (max-width: 320px) {
-    > form {
-      .description--box {
-        > span {
-        }
-      }
-
-      .details {
-        > div {
-        }
-      }
-
-      button {
       }
     }
   }

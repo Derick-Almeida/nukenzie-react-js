@@ -25,9 +25,6 @@ export const Container = styled.div`
     }
   }
 
-  @media (min-width: 2560px) {
-  }
-
   @media (max-width: 1024px) {
     > p {
       font-size: 0.9rem;
@@ -44,14 +41,17 @@ export const Container = styled.div`
   }
 
   @media (max-width: 768px) {
-  }
-
-  @media (max-width: 425px) {
+    .buttons button {
+      padding: 5px 9px;
+    }
   }
 
   @media (max-width: 375px) {
-  }
+    flex-direction: column;
 
-  @media (max-width: 320px) {
+    > p {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
   }
 `;

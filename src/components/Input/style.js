@@ -134,9 +134,6 @@ export const Container = styled.div`
     }
   }
 
-  @media (min-width: 2560px) {
-  }
-
   @media (max-width: 1024px) {
     > p {
       font-size: 0.8rem;
@@ -169,17 +166,5 @@ export const Container = styled.div`
       padding: 4px 15px;
       margin-bottom: -1px;
     }
-  }
-
-  @media (max-width: 768px) {
-  }
-
-  @media (max-width: 425px) {
-  }
-
-  @media (max-width: 375px) {
-  }
-
-  @media (max-width: 320px) {
   }
 `;
