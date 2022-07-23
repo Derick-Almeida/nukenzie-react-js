@@ -14,7 +14,7 @@
 ![react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![react](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
 
-- Link para a aplicação: <a href='https://nukenzie-mu.vercel.app'>Nu Kenzie</a>.
+- Link para a aplicação: <a href='https://nukenzie-mu.vercel.app' target="_blank">Nu Kenzie</a>.
 
 <br/>
 
